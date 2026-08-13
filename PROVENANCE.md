@@ -1,6 +1,6 @@
 # Export provenance
 
-- Source snapshot commit: `d8ac28896463b4098528166e8cb08048490afc14`
+- Source snapshot commit: `89fabf8743a5128df4560d4ea579d58d7f39ea17`
 - Repository identity: `tavisrudd/discrepancy-one-flips`
 - Export method: deterministic, content-addressed source materialization.
 - File hashes and source blob identities are recorded in `export-manifest.json`.
