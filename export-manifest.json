@@ -75,7 +75,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "5f01bebed518b37175222e182fe9fad9ceba1b10b71d22d39cff89a82642cfad",
+      "sha256": "cf5203ab7124a3b812cfd515ecdfba6617ba68614ca0d0ea5cfc6040299be2a1",
       "source_blob": null
     },
     {
@@ -88,22 +88,22 @@
       "source_blob": "4ad36cb8dc52830050ae094a0376a0539e640542"
     },
     {
-      "bytes": 123461,
+      "bytes": 123853,
       "mode": "100644",
       "path": "discrepancy_one_flips.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "bfd18d777da6fa21c8679928d1b702a1350328c1250de32cbe55c71ca300c00c",
-      "source_blob": "eaf7993fd452998022a5005726b1c380148d1bf6"
+      "sha256": "314617ab4a97f8725d3170aa34e1888fcc34f25fef575bae18f174312b800978",
+      "source_blob": "2190c9d383b10b84ac56d3dfacd78bdbdd470c13"
     },
     {
-      "bytes": 5373,
+      "bytes": 5844,
       "mode": "100644",
       "path": "discrepancy_one_flips.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "7c6ff0ddbcca5e11eafcf7a6bcc6342714908925fb13e760abefeb154e26dbf1",
-      "source_blob": "f0d657ea79a116e0efeedf523e766b7753de376b"
+      "sha256": "acc1adbef62aecf09f763914a28a7b4ff41caf5e3efc9ae3f0c3ec4af12d33f1",
+      "source_blob": "b9864db2c1053e20850f1f457a450a7af5bc0553"
     },
     {
       "bytes": 567,
@@ -182,5 +182,5 @@
   "repository": "discrepancy-one-flips",
   "repository_map_sha256": "8373b012b147a4eb375295a4554a7adf8cbe05b41832b224807448d55c3a1ae0",
   "schema_version": 1,
-  "source_commit": "89fabf8743a5128df4560d4ea579d58d7f39ea17"
+  "source_commit": "78cf3dd0ff2a932549675b2466da3893bf3f8d11"
 }
