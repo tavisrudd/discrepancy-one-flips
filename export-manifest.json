@@ -75,7 +75,7 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "288b9ee5ca09f6c86bcc487ae07c670a174a783991d23910b4e703e653bbaab1",
+      "sha256": "454aad6cbe4635be57e979b8e3a5ec6d115a7e2ca21ba9b7ed5adcd0dac17d57",
       "source_blob": null
     },
     {
@@ -88,22 +88,22 @@
       "source_blob": "b663770ef62ff4eb95a8ab57875b73827fa89bbd"
     },
     {
-      "bytes": 141170,
+      "bytes": 142086,
       "mode": "100644",
       "path": "discrepancy_one_flips.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "70c89f245917fb0e3a24c04f1a034ba35e1221fb0a0645cc12cb88495259eb05",
-      "source_blob": "8218fd96e196425acfe4e3bb16e40a36f0b80957"
+      "sha256": "1ac1e48883d72331db3976d6bbba5482965384c9351af4717a637b6e83c43f82",
+      "source_blob": "9fa1ce54f67ba8dfc2155351a6c496e7c5065326"
     },
     {
-      "bytes": 6782,
+      "bytes": 6837,
       "mode": "100644",
       "path": "discrepancy_one_flips.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "4511e9c39d712137b16d163bc1145fa0c82d16b0a3f07cd261eda66052b7bead",
-      "source_blob": "a6362e0d31818da046fc7062d577d62b963d7044"
+      "sha256": "49cea7f4e6aefd47766bdef20049b64cc9c0601febfe61bf5f2aacad9e193d5b",
+      "source_blob": "1cdbfe2cf562a81133c790f0d9df423157504e41"
     },
     {
       "bytes": 567,
@@ -124,13 +124,13 @@
       "source_blob": "abe0168d481b1a087395128131103c31eeece9e3"
     },
     {
-      "bytes": 9647,
+      "bytes": 9652,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "d0c61c2fa2b438d0935cf57089c23ebd8704ef47ffa1dee0e7ec6f7ae4103638",
-      "source_blob": "f4003513e969827bb1e09ed97fdd0696d9ce51f5"
+      "sha256": "88b20b24b38b881428d9cd6b032ae06a8008debb98b5a1794ceeff7f04fa15cb",
+      "source_blob": "3c4b798d31b523266ce39d34223bec5b97b87019"
     },
     {
       "bytes": 4667,
@@ -142,13 +142,13 @@
       "source_blob": "f1a9745fe416b6d69645cb0d782bcc7872409e9f"
     },
     {
-      "bytes": 15651,
+      "bytes": 16313,
       "mode": "100644",
       "path": "sections/03-normalization.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "f6fc9ea8cfdb586562486ab9ec2d5782bf5db0a8047dcb1a803cb307dc982afd",
-      "source_blob": "83b9120c16cc558a40e7411c1a9224c9010c6a91"
+      "sha256": "0f15a2bf7c5cfa025bca23412745fbb82180be8d7b475f43ac5aca0c6734315c",
+      "source_blob": "252ce6e544f48a9832a6e2ae9aa38fad8b197943"
     },
     {
       "bytes": 6771,
@@ -182,5 +182,5 @@
   "repository": "discrepancy-one-flips",
   "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "a4510f9f3c588e9c070b5d85e97c3fb7527a41b7"
+  "source_commit": "86dfdd4478534aa808c2c617a9275b3acbe70ddd"
 }
