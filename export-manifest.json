@@ -75,35 +75,35 @@
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "cf5203ab7124a3b812cfd515ecdfba6617ba68614ca0d0ea5cfc6040299be2a1",
+      "sha256": "288b9ee5ca09f6c86bcc487ae07c670a174a783991d23910b4e703e653bbaab1",
       "source_blob": null
     },
     {
-      "bytes": 2373,
+      "bytes": 2739,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "583dc08d3c42eb5d0af4b4a691d0bac4fdcc67498e5097a016b0578834589d1e",
-      "source_blob": "4ad36cb8dc52830050ae094a0376a0539e640542"
+      "sha256": "0d4bdc8ddf50994c7f53ebe4738764b8666e19836badce24615e102b4dbdb7e8",
+      "source_blob": "b663770ef62ff4eb95a8ab57875b73827fa89bbd"
     },
     {
-      "bytes": 123853,
+      "bytes": 141170,
       "mode": "100644",
       "path": "discrepancy_one_flips.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "314617ab4a97f8725d3170aa34e1888fcc34f25fef575bae18f174312b800978",
-      "source_blob": "2190c9d383b10b84ac56d3dfacd78bdbdd470c13"
+      "sha256": "70c89f245917fb0e3a24c04f1a034ba35e1221fb0a0645cc12cb88495259eb05",
+      "source_blob": "8218fd96e196425acfe4e3bb16e40a36f0b80957"
     },
     {
-      "bytes": 5844,
+      "bytes": 6782,
       "mode": "100644",
       "path": "discrepancy_one_flips.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "acc1adbef62aecf09f763914a28a7b4ff41caf5e3efc9ae3f0c3ec4af12d33f1",
-      "source_blob": "b9864db2c1053e20850f1f457a450a7af5bc0553"
+      "sha256": "4511e9c39d712137b16d163bc1145fa0c82d16b0a3f07cd261eda66052b7bead",
+      "source_blob": "a6362e0d31818da046fc7062d577d62b963d7044"
     },
     {
       "bytes": 567,
@@ -124,49 +124,49 @@
       "source_blob": "abe0168d481b1a087395128131103c31eeece9e3"
     },
     {
-      "bytes": 9292,
+      "bytes": 9647,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "570693f618015e9d46cb610b34a5d809632161f2640fecc887e41efa1addfbab",
-      "source_blob": "7548351f71b6372cd05936d0c5e660d288945503"
+      "sha256": "d0c61c2fa2b438d0935cf57089c23ebd8704ef47ffa1dee0e7ec6f7ae4103638",
+      "source_blob": "f4003513e969827bb1e09ed97fdd0696d9ce51f5"
     },
     {
-      "bytes": 4175,
+      "bytes": 4667,
       "mode": "100644",
       "path": "sections/02-hypotheses.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "ff3e176ba71614ca9817513be6aeda07f4181ba3d48e2b2fb502f3d6bff70e5a",
-      "source_blob": "12d6091488df9f9780e4d489718a3c9da02b9eed"
+      "sha256": "f39020db8de7df3ed4bf2e1875d64d3188a2777bf1375818dec6b94eab87748b",
+      "source_blob": "f1a9745fe416b6d69645cb0d782bcc7872409e9f"
     },
     {
-      "bytes": 7935,
+      "bytes": 15651,
       "mode": "100644",
       "path": "sections/03-normalization.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "7d4ff743ab43d6e556b9169f230afeb26edd874946f2f3b1c9cb2a958cfd67b0",
-      "source_blob": "00fe854897707386ad30cf22623c4d7763e5eba9"
+      "sha256": "f6fc9ea8cfdb586562486ab9ec2d5782bf5db0a8047dcb1a803cb307dc982afd",
+      "source_blob": "83b9120c16cc558a40e7411c1a9224c9010c6a91"
     },
     {
-      "bytes": 6504,
+      "bytes": 6771,
       "mode": "100644",
       "path": "sections/04-aperture.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "f2d70d5a313eeb4099da43aee6481d05c0b12f1a684534f05c837dec5e7741d7",
-      "source_blob": "580134857c25fb4953989071d826219bc20f5a34"
+      "sha256": "45ad0faa9692778ad80503c44be032156774ab3e44062e7335621cf3b10f028f",
+      "source_blob": "9e791670a0ce2eec875a84a497dd14dcbacde6f5"
     },
     {
-      "bytes": 4156,
+      "bytes": 4906,
       "mode": "100644",
       "path": "sections/05-scope.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "9870f652554372f7660831ef7aeceac18b80c9ba55a9880e9d8a9373391433c7",
-      "source_blob": "015da6efdacb0d0aa51804bf05fd09059027a2d8"
+      "sha256": "1dbb518ff392e37877eb7c6067449f0e799d9b746143a4b0c0a1ce76a275b321",
+      "source_blob": "1071e5c21dc9a97c300a211f360ee083b6827640"
     }
   ],
   "github": "tavisrudd/discrepancy-one-flips",
@@ -177,10 +177,10 @@
   "paper_ids": [
     "discrepancy_one_flips"
   ],
-  "paper_registry_sha256": "acbfe7fa9f976a5fff3a2ab980666b9515adb43a19acb0d2373f0cbdb47d724d",
+  "paper_registry_sha256": "e3e739fd4bca142a8c245291c1d30125fa468718cc8351c23c2b2fc3c452e84e",
   "release_output_policy": "legacy-unspecified",
   "repository": "discrepancy-one-flips",
-  "repository_map_sha256": "8373b012b147a4eb375295a4554a7adf8cbe05b41832b224807448d55c3a1ae0",
+  "repository_map_sha256": "b1287d69c4398954d5ac0d89e29bbd2425c5da957d3e7a6380f638513346803a",
   "schema_version": 1,
-  "source_commit": "78cf3dd0ff2a932549675b2466da3893bf3f8d11"
+  "source_commit": "a4510f9f3c588e9c070b5d85e97c3fb7527a41b7"
 }

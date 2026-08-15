@@ -30,7 +30,8 @@ contracted by \(p\), and prove that the Gamma-class decomposition of
 \(H^{*}(X)\) induced by the semiorthogonal decomposition of \(\Db(X)\) of
 \cite{BFR} is a decomposition into strong asymptotic classes in the sense of
 Galkin--Golyshev--Iritani \cite{GGI}.  This is
-\cite[Theorems~1.2, 1.4 and~9.14, Corollary~1.5]{SS}, and it is stated for
+\cite[Theorems~1.2, 1.4 and~9.14, Corollary~1.5]{SS}; apart from
+\cite[Theorem~1.2]{SS}, which assumes \(r-s>1\), it is stated for
 standard flips with the explicit remark that it covers the blow-up case
 \(s=1\) and the projective-bundle case \(s=0\).
 
@@ -59,22 +60,26 @@ Three hypotheses in the printed argument constrain \(\nu\).
 therefore cannot equal the \(J\)-function of \(T\), although it does lie on
 Givental's Lagrangian cone of \(T\) and so is an \(I\)-function.  Finally,
 the Barnes asymptotic expansion of the Meijer \(G\)-function of
-\cite[Lemma~7.4]{SS} is introduced by the sentence ``For \(r-s>1\)'', and the
+\cite[Lemma~7.4]{SS} is introduced by the clause ``For \(r-s>1\)'', and the
 sector \cite[(64)]{SS} printed with it is derived under that inequality.
 Under the standing assumption \(r>s\), the range excluded by these three
 hypotheses is exactly \(\nu=1\), that is
 \[
   r=s+1 .
 \]
-It contains every codimension-two blow-up, the case \((r,s)=(2,1)\).  So the
-dependency chain printed for \cite[Theorems~1.2, 1.4 and~9.14]{SS} does not
-literally reach the discrepancy-one range, even though the statements are
-made for standard flips and blow-ups without a restriction on \(\nu\).
+It contains every codimension-two blow-up, the case \((r,s)=(2,1)\).  Thus
+\cite[Theorem~1.2]{SS} is proved only in its stated range \(r-s>1\), while
+\cite[Theorems~1.4 and~9.14]{SS} and \cite[Corollary~1.5]{SS}, which are
+stated for standard flips and blow-ups without a restriction on \(\nu\), rely
+on inputs whose printed proofs do not cover \(r-s=1\).
 
-This note supplies the two missing steps.  Both are internal to \cite{SS}:
-the first uses only \eqref{eq:ss35} and the cone membership already recorded
-in \cite[Remark~4.5(3)]{SS}, and the second uses only
-\cite[Theorem~A.1]{SS}, in the form the authors state it.
+This note supplies the two missing steps.  The second uses only
+\cite[Theorems~A.1 and~A.2]{SS}, in the form the authors state them.  The first uses
+\eqref{eq:ss35} together with the fact that it lies on Givental's Lagrangian
+cone.  That fact is asserted in \cite[Remark~4.5(3)]{SS}, the same remark
+whose other half we contradict, so we do not quote it: Section~3 derives it
+from the sources \cite{Brown} and \cite{CoatesGivental} that the authors
+name, and checks that none of them restricts \(r-s\).
 
 \begin{theorem}
   \label{thm:normalization}
@@ -88,7 +93,7 @@ in \cite[Remark~4.5(3)]{SS}, and the second uses only
   of \cite[Theorem~4.6]{SS} holds for \(r=s+1\),
   \(s\ge1\), as does \cite[Theorem~1.2]{SS}, with the single nonzero
   eigenvalue \(\lambda_{0}(q)=(-1)^{s}q\) of multiplicity
-  \(\dim H^{*}(Z)\).
+  \(\rk H^{*}(Z)\).
 \end{theorem}
 
 The negative assertion of \cite[Remark~4.5(3)]{SS} is therefore accurate, in
@@ -98,11 +103,12 @@ zero.
 
 \begin{theorem}
   \label{thm:aperture}
-  Let \(r=s+1\) with \(s\ge1\), and let \(0\le k\le1\).  The asymptotic
+  Let \(r=s+1\) with \(s\ge1\), and let \(k\in\{0,1\}\).  The asymptotic
   expansion of \cite[Proposition~7.5]{SS} for the component indexed by
   \(m=-k\) is valid on
-  \(\bigl|\arg(z/q)+(2m+s)\pi\bigr|<\tfrac{3\pi}{2}\), and not on the wider
-  sector obtained by setting \(r-s=1\) in \cite[(64)]{SS}.  The expansion of
+  \(\bigl|\arg(z/q)+(2m+s)\pi\bigr|<\tfrac{3\pi}{2}\); \cite[Theorem~A.1]{SS}
+  does not supply it on the wider sector obtained by setting \(r-s=1\)
+  in \cite[(64)]{SS}.  The expansion of
   \cite[Proposition~8.2]{SS} is valid on
   \(\bigl|\arg(z/q)-(1-s)\pi\bigr|<\tfrac{3\pi}{2}\).  These two sectors meet
   in an open sector of opening \(2\pi\) containing both the eigenvalue ray
@@ -136,8 +142,8 @@ hence a nontrivial mirror map, hence exactly the failure asserted in
 \(d\ge1\) summand below \(z^{0}\) as soon as \(s\ge1\).  Once no
 \(z\)-order-zero contribution survives, the \(z^{0}\) coefficient of
 \eqref{eq:ss35} is the parameter \(\bar{\mathbf t}\) itself, the mirror map
-is the identity, and uniqueness of the \(J\)-slice of the cone converts the
-cone membership of \cite[Remark~4.5(3)]{SS} into an identification.
+is the identity, and uniqueness of the \(J\)-slice of the cone converts cone
+membership into an identification.
 
 Theorem~\ref{thm:aperture} is not a strengthening but a correction of an
 aperture.  The Meijer \(G\)-function of \cite[Lemma~7.4]{SS} has
