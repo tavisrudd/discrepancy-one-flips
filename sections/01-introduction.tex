@@ -79,7 +79,8 @@ This note supplies the two missing steps.  The second uses only
 cone.  That fact is asserted in \cite[Remark~4.5(3)]{SS}, the same remark
 whose other half we contradict, so we do not quote it: Section~3 derives it
 from the sources \cite{Brown} and \cite{CoatesGivental} that the authors
-name, and checks that none of them restricts \(r-s\).
+name, using the twisted \(I\)-function theorem of \cite{CCIT} for the
+inverse Euler class, and checks that none of them restricts \(r-s\).
 
 \begin{theorem}
   \label{thm:normalization}
@@ -89,7 +90,11 @@ name, and checks that none of them restricts \(r-s\).
   \eqref{eq:ss35} has \(z\)-order at most \(-1\) for every \(d\ge1\).
   Consequently \eqref{eq:ss35} equals \(z\one+\bar{\mathbf t}+O(z^{-1})\)
   with \(\bar{\mathbf t}=t+\ln(q)c_{1}(T)\), and equals the extremal
-  \(J\)-function of \(T\).  In particular the presentation \cite[(37)]{SS}
+  \(J\)-function of \(T\).  The same holds equivariantly for every torus
+  acting trivially on \(Z\) and by bundle automorphisms on \(V\) and \(V'\),
+  with the equivariant \(J\)-function defined by proper pushforward; for
+  the tori used in \cite{SS} this is their localized definition.
+  In particular the presentation \cite[(37)]{SS}
   of \cite[Theorem~4.6]{SS} holds for \(r=s+1\),
   \(s\ge1\), as does \cite[Theorem~1.2]{SS}, with the single nonzero
   eigenvalue \(\lambda_{0}(q)=(-1)^{s}q\) of multiplicity
@@ -103,16 +108,18 @@ zero.
 
 \begin{theorem}
   \label{thm:aperture}
-  Let \(r=s+1\) with \(s\ge1\), and let \(k\in\{0,1\}\).  The asymptotic
+  Let \(r=s+1\) with \(s\ge1\), and let \(m\in\mathbf Z\).  The asymptotic
   expansion of \cite[Proposition~7.5]{SS} for the component indexed by
-  \(m=-k\) is valid on
-  \(\bigl|\arg(z/q)+(2m+s)\pi\bigr|<\tfrac{3\pi}{2}\); \cite[Theorem~A.1]{SS}
+  \(m\) is valid on
+  \(\bigl|\arg(z/q)+(2m+s)\pi\bigr|<\tfrac{3\pi}{2}\), an open sector about
+  the eigenvalue ray \(\arg(z/q)=-(2m+s)\pi\); \cite[Theorem~A.1]{SS}
   does not supply it on the wider sector obtained by setting \(r-s=1\)
   in \cite[(64)]{SS}.  The expansion of
   \cite[Proposition~8.2]{SS} is valid on
-  \(\bigl|\arg(z/q)-(1-s)\pi\bigr|<\tfrac{3\pi}{2}\).  These two sectors meet
-  in an open sector of opening \(2\pi\) containing both the eigenvalue ray
-  \(\arg(z/q)=-(2m+s)\pi\) and the tame ray \(\arg(z/q)=(1-s)\pi\).
+  \(\bigl|\arg(z/q)-(1-s)\pi\bigr|<\tfrac{3\pi}{2}\), an open sector about
+  the tame ray \(\arg(z/q)=(1-s)\pi\).  For \(m=-k\) with \(k\in\{0,1\}\),
+  these two sectors meet in an open sector of opening \(2\pi\) containing
+  both rays.
 \end{theorem}
 
 For a codimension-two blow-up, \((r,s)=(2,1)\) and \(k=m=0\), the two
@@ -152,12 +159,16 @@ of Meijer \cite{Meijer} and Luke \cite{Luke} --- is valid on
 \(|\arg t|<(\nu+\epsilon)\pi\) with \(\epsilon=1\) for \(\nu>1\) but only
 \(\epsilon=\tfrac12\) for \(\nu=1\).  The sector \cite[(64)]{SS} is the
 \(\epsilon=1\) sector; substituting \(r-s=1\) into it claims an aperture
-\(\pi/2\) wider on each side than Barnes' expansion supports.  The point of
-Theorem~\ref{thm:aperture} is that the smaller, correct sector is still
-large enough: the common sector with \cite[Proposition~8.2]{SS} retains
-opening \(2\pi\), so the oriented comparison of the nonzero-eigenvalue and
-tame expansions that the argument of \cite[Section~9]{SS} performs is
-available at \(\nu=1\) as it is for \(\nu>1\).
+\(\pi/2\) wider on each side than Barnes' expansion supports.  The later
+argument needs much less than that sector.  Strong asymptotic classes are
+defined by growth along a single ray \cite[Definition~1.3]{SS}, and
+\cite[Proposition~9.2]{SS} treats the eigenvalue ray and the tame ray
+separately, through \cite[Proposition~7.8]{SS} and
+\cite[Corollary~8.4]{SS}.  Each ray is the centre of its own corrected
+sector, so the smaller sector still carries the expansion that
+\cite[Section~9]{SS} uses.  The last sentence of
+Theorem~\ref{thm:aperture} is not needed for that; it corrects the
+common-sector condition of \cite[Remark~1.6]{SS} at \(\nu=1\).
 
 What is not covered is the formal endpoint \((r,s)=(1,0)\), the rank-one
 projective bundle, where \(\PP(V)=Z\), \(X'=\varnothing\), and the point
@@ -178,5 +189,6 @@ Corollary~\ref{cor:repaired} and states the boundary of the repair.
 explicitly, as in \cite[Theorem~4.4]{SS} or \cite[(35)]{SS}, and refer to
 the version arXiv:2502.08762v2.  Numbered items of \cite{CoatesGivental},
 and the discussion ``On Serre duality'' cited in
-Section~\ref{sec:normalization}, refer to arXiv:math/0110142v2.  Displays numbered here, such as
+Section~\ref{sec:normalization}, refer to arXiv:math/0110142v2, and those of
+\cite{CCIT} to arXiv:math/0702234v3.  Displays numbered here, such as
 \eqref{eq:ss35}, are our own.

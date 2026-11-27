@@ -30,13 +30,14 @@ that the degree-`d` summand of the series has `z`-order at most
 and `s >= 1`, so uniqueness of the `J`-slice of Givental's cone identifies
 the series with the extremal `J`-function.  The cone membership this uses is
 proved rather than quoted: for split bundles from Brown's toric-fibration
-theorem and the twisted theory of Coates and Givental, and in general by a
-flag-bundle pullback and a deformation to the associated graded.  At
-`nu = r - s = 1`
-the correct Meijer sector comes from Barnes' expansion with `epsilon = 1/2`
-rather than from specializing the printed sector, and the corrected sector
-still meets the ambient one in an open sector of opening `2 pi` containing
-both the eigenvalue ray and the tame ray.  The rank-one projective-bundle
+theorem and the twisted theory of Coates and Givental, in the form proved by
+Coates, Corti, Iritani and Tseng, and in general by a flag-bundle pullback
+and a deformation to the associated graded.  At `nu = r - s = 1` the correct
+Meijer sector comes from Barnes' expansion with `epsilon = 1/2` rather than
+from specializing the printed sector.  The corrected sector is still an open
+sector about the eigenvalue ray, which is all the later single-ray
+asymptotics use; it also meets the ambient sector in an open sector of
+opening `2 pi`, which corrects a side remark of Shen and Shoemaker.  The rank-one projective-bundle
 endpoint `(r, s) = (1, 0)`, whose fibres contain no extremal line, is
 excluded; its formal hypergeometric expression already fails the required
 normalization.

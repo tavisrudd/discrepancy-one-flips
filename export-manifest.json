@@ -1,8 +1,8 @@
 {
+  "content_sha256": "6e99005ed56d312920330757a24ae5bfeccdb5e43d7ad53b74ba8466f1015fab",
   "excluded_path_count": 0,
   "excluded_release_outputs": [],
   "excluded_symlinks": [],
-  "exporter_blob": "bc16a3f02957af1342e19dfe7fad78e003d8c5dc",
   "files": [
     {
       "bytes": 108,
@@ -71,39 +71,39 @@
       "source_blob": "029a4829e0be3fe2aaeccdfdd10f958b8ef6d649"
     },
     {
-      "bytes": 302,
+      "bytes": 507,
       "mode": "100644",
       "path": "PROVENANCE.md",
       "role": "provenance",
-      "sha256": "d1fa05cbc36b6101670d60a04df0b2f44be75bf4380b5bfacff5e2ff73cdc06c",
+      "sha256": "70634480bdc9e40bb6c83e7b0b46be7b1594b8047c1863f652decba8cae7f072",
       "source_blob": null
     },
     {
-      "bytes": 2739,
+      "bytes": 2898,
       "mode": "100644",
       "path": "README.md",
       "rewrites": [],
       "role": "support",
-      "sha256": "ecf9f1d4e3a7cdfdf6ad35067ddd39de6f1417bf917606c4085b1c99c12bc32f",
-      "source_blob": "b7685127ccf623c84304b86d48e47efdf3f34839"
+      "sha256": "a838e53f887a87659e57e1b3a6feb6a4f6d3a0cb8707525d2310b4d5c3084b5a",
+      "source_blob": "2dc6ca78bbb40fab9dadb421bda16799097ea124"
     },
     {
-      "bytes": 144892,
+      "bytes": 174366,
       "mode": "100644",
       "path": "discrepancy_one_flips.pdf",
       "rewrites": [],
       "role": "release-output",
-      "sha256": "9aa5a6b4894da0b32a44c9c733925bdcb86f02809002448acc0805ff887ff912",
-      "source_blob": "48742dcbed30d582fdce716fbad097676d82dfdb"
+      "sha256": "bbac299c8579db482b7f0e148f13e48756bf4e5d61b9a5f6b81ad860bc278ba5",
+      "source_blob": "986696cc922a9f66588cb1ee47267f7e4da6f18c"
     },
     {
-      "bytes": 6862,
+      "bytes": 6942,
       "mode": "100644",
       "path": "discrepancy_one_flips.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "596cacd21846ecb98dbdc9036373f0e85343cb77dbda189c10a1715674114392",
-      "source_blob": "500907882a772285973b740ea60f1719c463848d"
+      "sha256": "633763d9e0c84d76ce0b02d60f7ba25e1c9bc5d653b6050c69355ba7776e4700",
+      "source_blob": "313878edd7af71db56b76fa829847032340c7acf"
     },
     {
       "bytes": 567,
@@ -124,49 +124,49 @@
       "source_blob": "abe0168d481b1a087395128131103c31eeece9e3"
     },
     {
-      "bytes": 9812,
+      "bytes": 10529,
       "mode": "100644",
       "path": "sections/01-introduction.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "5d579b39844973a4de993910a2da65dbd5e4357bf5725e25661a5be0c8b95434",
-      "source_blob": "5762180ce9f3ce15d04a60731186fe13288c452d"
+      "sha256": "83aed19286d0b7acdfb460e6b538c12add1274cd6bbba67e842786da0970497f",
+      "source_blob": "14d4ccb4703458de7592fc18a30af1ea82a571df"
     },
     {
-      "bytes": 4667,
+      "bytes": 4845,
       "mode": "100644",
       "path": "sections/02-hypotheses.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "f39020db8de7df3ed4bf2e1875d64d3188a2777bf1375818dec6b94eab87748b",
-      "source_blob": "f1a9745fe416b6d69645cb0d782bcc7872409e9f"
+      "sha256": "c5025ff52100f26ce0ffaa5d00ca0dae1d0c1ff781003c3b9d1311ca52a18eb0",
+      "source_blob": "c60f5c82b3c1718c07f9003f19b7f64217e5f7f6"
     },
     {
-      "bytes": 17713,
+      "bytes": 32145,
       "mode": "100644",
       "path": "sections/03-normalization.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "d84da14b73f589c97870a9bf451b0ba6d7027d3ec036fbdf18c90054ca6e9d10",
-      "source_blob": "d7c9daf82b669df3fbdcf6839121994f6970d8bd"
+      "sha256": "e23ca9321bbb5d00c4ea83f18e0579acc2acc77ee6c89e3289a2b606bdfadabf",
+      "source_blob": "fa84063ba3ad3df3156be60ce289c383835cb571"
     },
     {
-      "bytes": 6771,
+      "bytes": 7891,
       "mode": "100644",
       "path": "sections/04-aperture.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "45ad0faa9692778ad80503c44be032156774ab3e44062e7335621cf3b10f028f",
-      "source_blob": "9e791670a0ce2eec875a84a497dd14dcbacde6f5"
+      "sha256": "9715f3ab8e0529bb9a4f02860ee85654278863b19f247a92999e927f5044e892",
+      "source_blob": "a9f1d37dda1af4589b36dbd69c223c0adc8060f3"
     },
     {
-      "bytes": 4906,
+      "bytes": 5352,
       "mode": "100644",
       "path": "sections/05-scope.tex",
       "rewrites": [],
       "role": "manuscript-source",
-      "sha256": "1dbb518ff392e37877eb7c6067449f0e799d9b746143a4b0c0a1ce76a275b321",
-      "source_blob": "1071e5c21dc9a97c300a211f360ee083b6827640"
+      "sha256": "6de3c040dce9f63f60077c0d9a34899ea639e430e2df820dd3898476b9c53849",
+      "source_blob": "aec78bde99c5e3b68bb18227710cb494d3823988"
     }
   ],
   "github": "tavisrudd/discrepancy-one-flips",
@@ -174,13 +174,6 @@
     "discrepancy_one_flips.tex"
   ],
   "manifest_self_excluded": true,
-  "paper_ids": [
-    "discrepancy_one_flips"
-  ],
-  "paper_registry_sha256": "98e59703c9318cd0e89d51dac9c0208ff5bce00f6f755da6f4ddcc9b9fd582d1",
-  "release_output_policy": "legacy-unspecified",
   "repository": "discrepancy-one-flips",
-  "repository_map_sha256": "3e4d1fdaa2b00ebcf7153632b1c0eda21bbccd42027625a3475f23868ab87e86",
-  "schema_version": 1,
-  "source_commit": "92f9edc523bfebb8f965e6bf478739a70b0c58c7"
+  "schema_version": 1
 }

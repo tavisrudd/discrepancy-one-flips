@@ -13,19 +13,23 @@ exist individually on \(Y\), and we continue to write \(V\), \(V'\),
    \cong H^{*}(Y)[H]\big/\left\langle
      \textstyle\prod_{i=1}^{r}(\rho_i+H)\right\rangle
 \]
-for the coefficient ring of \eqref{eq:ss35} after this pullback.  It is a
-finite-dimensional graded \(\C\)-algebra whose elements of positive degree are
-nilpotent.  Each factor of the denominator of \eqref{eq:ss35} has the
-form \(mz+a\) with \(m\ge1\) and \(a=\rho_{i}+H\in A\), so
+for the coefficient ring of \eqref{eq:ss35} after this pullback, and let
+\(R=A[\ln q][[t]]\), the coordinates of \(t\) being formal variables; the
+\(\ln q\) is discussed before Lemma~\ref{lem:jslice}.  Each factor of the
+denominator of \eqref{eq:ss35} has the form \(mz+a\) with \(m\ge1\) and
+\(a=\rho_{i}+H\in A\), and we expand
 \[
   \frac1{mz+a}
-  =\frac1{mz}\sum_{l\ge0}\Bigl(\frac{-a}{mz}\Bigr)^{l}\in z^{-1}A[z^{-1}]
+  =\frac1{mz}\sum_{l\ge0}\Bigl(\frac{-a}{mz}\Bigr)^{l}\in z^{-1}A[[z^{-1}]].
 \]
-is a finite sum, so each summand of \eqref{eq:ss35} lies in
-\(zA[z^{-1}][[q]]\) once the \(\ln q\) carried by the prefactor is handled as
-described before Lemma~\ref{lem:jslice}.
-By the \emph{\(z\)-order} of such an element we mean the largest \(n\) with a
-nonzero \(z^{n}\) coefficient.  A \(z\)-order bound proved after the pullback
+The sum is finite because elements of \(A\) of positive degree are nilpotent,
+but only the formal expansion is used.  The prefactor
+\(z\,e^{t/z}q^{c_{1}(T)/z}=z\,e^{\bar{\mathbf t}/z}\) lies in
+\(z\one+R[[z^{-1}]]\) and is an infinite series in \(z^{-1}\), since \(t\) has
+formal coordinates.  So the right-hand side of \eqref{eq:ss35} lies in
+\(zR[[z^{-1}]][[q]]\).
+By the \emph{\(z\)-order} of a nonzero element of \(zR[[z^{-1}]]\) we mean the
+largest \(n\) with a nonzero \(z^{n}\) coefficient.  A \(z\)-order bound proved after the pullback
 is a coefficientwise statement about classes in the image of an injective
 map, so it descends to the original cohomology ring; the bound below is in
 any case stated in terms of \(r\), \(s\) and \(d\) alone.
@@ -46,8 +50,10 @@ any case stated in terms of \(r\), \(s\) and \(d\) alone.
   \(z\).  So the numerator is a polynomial in \(z\) over \(A\) of degree at
   most \(s(d-1)\).  The denominator \(\prod_{i=1}^{r}\prod_{m=1}^{d}(\rho_{i}
   +H+mz)\) has \(rd\) factors, all with \(m\ge1\), so by the expansion above
-  its inverse lies in \(z^{-rd}A[z^{-1}]\).  Multiplying by the leading
-  factor \(z\) of \eqref{eq:ss35} adds one.
+  its inverse lies in \(z^{-rd}A[[z^{-1}]]\).  The prefactor
+  \(z\,e^{\bar{\mathbf t}/z}\) is \(z\) times an element of
+  \(\one+z^{-1}R[[z^{-1}]]\); the factor \(z\) adds one to the order, and the
+  second factor does not raise it.
 \end{proof}
 
 The two hypotheses of Theorem~\ref{thm:normalization} enter here and nowhere
@@ -78,10 +84,10 @@ else.
   \label{rem:boundary}
   Both hypotheses are sharp.  For \(\nu=1\) and \(s=0\), so \((r,s)=(1,0)\),
   the bound of Lemma~\ref{lem:order} is \(1-d\) and is attained by the formal
-  \(d=1\) term of the hypergeometric expression:
+  \(d=1\) term of the hypergeometric expression.  Here \(\rho_{1}+H=0\) in
+  \(A\), so that term is exactly
   \[
-    z\cdot\frac{q}{\rho_{1}+H+z}
-    =q\one-\frac{q(\rho_{1}+H)}{z}+\cdots.
+    z\cdot\frac{q}{\rho_{1}+H+z}=q\one .
   \]
   Its \(z^{0}\) coefficient is \(q\one\), so this formal expression is not
   \(J\)-normalized.  Geometrically \(\PP(V)=Z\) has point fibres and no line
@@ -92,45 +98,87 @@ else.
 \end{remark}
 
 To convert the normalization into an identification we use the standard
-characterization of the \(J\)-function as a slice of Givental's cone.  Let
-\(\mathcal L_{T}\) denote the overruled Lagrangian cone of the genus-zero
-Gromov--Witten theory of \(T\), in the extremal specialization
-\eqref{eq:barparam}.
+characterization of the \(J\)-function as a slice of Givental's cone.  The
+space \(T\) is not compact, so \(H^{*}(T)\) carries no nondegenerate
+Poincar\'e pairing and the symplectic formalism is available only
+equivariantly.  Let \(\C^{\times}\) act trivially on \(\PP(V)\) and by inverse
+scaling on the fibres of \(V'(-1)=\pi^{*}V'\otimes\mathcal O_{\PP(V)}(-1)\),
+and write \(\lambda\) for the generator of \(H^{2}_{\C^{\times}}(\mathrm{pt})\)
+given by the standard character.  The equivariant Chern roots of \(V'(-1)\)
+are then \(\sigma_{j}-H-\lambda\), so
+\(e_{\lambda}(V'(-1))=\prod_{j=1}^{s}(-\lambda+\sigma_{j}-H)\); this is the
+only sign convention for \(\lambda\) used below.  Following
+\cite{CoatesGivental} and \cite{CCIT}, the local theory of \(T\) is
+the genus-zero theory of the compact space \(\PP(V)\) twisted by the inverse
+\(\C^{\times}\)-equivariant Euler class of \(V'(-1)\); its pairing
+\((a,b)_{\lambda}=\int_{\PP(V)}ab\,e_{\lambda}(V'(-1))^{-1}\) is
+nondegenerate over \(\C(\lambda)\).  Let \(\mathcal L_{T}^{\lambda}\) and
+\(J^{T}_{\lambda}\) denote its overruled Lagrangian cone and its
+\(J\)-function, and \(\mathcal L_{\PP(V)}\) the cone of \(\PP(V)\), all in
+the extremal specialization \eqref{eq:barparam}.  The extremal
+\(J\)-function \(J^{T}\) of \cite{SS} is recovered at \(\lambda=0\) by
+Lemma~\ref{lem:limit} below.
 
-The parameter \(\bar{\mathbf t}=t+\ln(q)c_{1}(T)\) is not literally defined
-over \(\C[[q]]\).  Two readings remove the difficulty, and they agree.  One
-may adjoin \(\ln q\) to the coefficients, the standard extension used with
-the divisor equation, over which both the extremal cone and \eqref{eq:ss35}
-are defined; or one may factor off the prefactor \(q^{c_{1}(T)/z}\) and work
-with the remaining series, in which \(q\) appears only in integral powers.
-In either reading the degree-\(d\) summand carries \(q^{(r-s)d}\) by
-\eqref{eq:ss35}.  That weight is positive because \(r>s\), so the series
-converges \(q\)-adically and \eqref{eq:ss35} is a point of the ambient
-symplectic space.
+The parameter \(\bar{\mathbf t}=t+\ln(q)c_{1}(T)\) is not in the maximal
+ideal of the formal parameters, and we fix its meaning by the divisor
+equation.  For a theory \(\mathcal T\) (untwisted, or twisted as above),
+with \(J\)-function \(J^{\mathcal T}=\sum_{d}Q^{d}J^{\mathcal T}_{d}\), a
+divisor class \(D\) and \(t\) formal, we set
+\begin{equation}
+  \label{eq:lnq}
+  J^{\mathcal T}(t+\ln(q)D,z)
+  :=e^{\ln(q)D/z}\sum_{d}Q^{d}q^{\langle D,d\rangle}J^{\mathcal T}_{d}(t,z),
+\end{equation}
+which is what the divisor equation gives whenever both sides are defined; the
+divisor equation holds for the twisted theory as for the untwisted one
+\cite{CoatesGivental}.  With \(D=c_{1}(T)\) and the extremal specialization,
+the degree-\(k[L]\) summand carries \(q^{(r-s)k}\), and the factor
+\(e^{\ln(q)c_{1}(T)/z}=q^{c_{1}(T)/z}\) is the prefactor of
+\eqref{eq:ss35}.  The weight \(q^{(r-s)k}\) is positive because \(r>s\), so
+the series converges \(q\)-adically.  The same divisor-equation symmetry,
+multiplication by \(e^{\ln(q)D/z}\) together with \(Q^{d}\mapsto
+Q^{d}q^{\langle D,d\rangle}\), preserves each cone below, so a statement at
+the parameter \(\bar{\mathbf t}\) is the image of the same statement at the
+formal parameter \(t\).
 
 \begin{lemma}[\(J\)-slice uniqueness; {\cite{Givental}}, {\cite{CoatesGivental}}]
   \label{lem:jslice}
-  Let \(Y\) be \(T\) or \(\PP(V)\) in the extremal specialization, and let
-  \(f\in\mathcal L_{Y}\) be of the form \(f=z\one+\tau+O(z^{-1})\) for
-  some \(\tau\) in the parameter space.  Then \(f=J^{Y}(\tau,z)\).
+  Let \(\mathcal L\) be \(\mathcal L_{\PP(V)}\) or
+  \(\mathcal L_{T}^{\lambda}\), with \(J\)-function \(J\), and let
+  \(f\in\mathcal L\) be of the form \(f=z\one+\tau+O(z^{-1})\) for
+  some \(\tau\) in the parameter space.  Then \(f=J(\tau,z)\).
 \end{lemma}
+
+For \(\tau=\bar{\mathbf t}\) the lemma is applied in the form fixed by
+\eqref{eq:lnq}: strip the factor \(q^{c_{1}(T)/z}\) from \(f\), apply
+uniqueness at the formal parameter \(t\), and restore the factor.
 
 This is the mechanism behind every mirror theorem of Givental type: a point
 of the cone with a prescribed \(z^{0}\) coefficient is the \(J\)-function at
 that coefficient, and the mirror map is precisely the difference between
 the prescribed \(z^{0}\) coefficient and the parameter one started with.
 
-The second ingredient is that \eqref{eq:ss35} lies on \(\mathcal L_{T}\) at
-all.  This is asserted in \cite[Remark~4.5(3)]{SS}, the same remark
-whose other assertion Corollary~\ref{cor:normalized} contradicts, so we prove
-it instead of quoting it.  We begin with split bundles, where the two sources
-the authors name do the work.
+The second ingredient is that \eqref{eq:ss35}, in its \(\lambda\)-twisted
+form, lies on the cone at all.  This is asserted in
+\cite[Remark~4.5(3)]{SS}, the same remark whose other assertion
+Corollary~\ref{cor:normalized} contradicts, so we prove it instead of quoting
+it.  We begin with split bundles, where the two sources the authors name do
+the work, with the inverse-Euler twist taken from \cite{CCIT}.
 
 \begin{lemma}
   \label{lem:cone}
   Let \(r>s\ge0\) with \(r\ge2\), and suppose \(V=\bigoplus_{i=1}^{r}L_{i}\)
-  and \(V'=\bigoplus_{j=1}^{s}M_{j}\).  Then the right-hand side of
-  \eqref{eq:ss35} lies on \(\mathcal L_{T}\).
+  and \(V'=\bigoplus_{j=1}^{s}M_{j}\).  Then the series
+  \begin{equation}
+    \label{eq:Ilambda}
+    I_{\lambda}
+    =z\,e^{t/z}q^{c_{1}(T)/z}
+    \sum_{d\ge0}q^{(r-s)d}\,
+    \frac{\prod_{j=1}^{s}\prod_{m=0}^{d-1}(-\lambda+\sigma_{j}-H-mz)}
+         {\prod_{i=1}^{r}\prod_{m=1}^{d}(\rho_{i}+H+mz)}
+  \end{equation}
+  lies on \(\mathcal L_{T}^{\lambda}\).  At \(\lambda=0\) it is the
+  right-hand side of \eqref{eq:ss35}.
 \end{lemma}
 
 \begin{proof}
@@ -148,7 +196,9 @@ the authors name do the work.
   bundle occurs in them, so they cannot constrain \(r-s\).
 
   Now the twist.  A stable map \(f\colon C\to\PP(V)\) of class \(k[L]\) with
-  \(k\ge1\) has image in a fibre of \(\PP(V)\to Z\) by \cite[Lemma~2.6]{SS}.
+  \(k\ge1\) has image in a fibre of \(\PP(V)\to Z\), by the argument of
+  \cite[Lemma~2.6]{SS} in the fibre-bundle form used in the proof of
+  \cite[Theorem~4.2]{SS} (the lemma itself is stated for curves in \(X\)).
   There \(V'(-1)=\pi^{*}V'\otimes\mathcal O_{\PP(V)}(-1)\) pulls back to a
   sum of \(s\) line bundles of degree \(-k_{i}\) on each component
   \(C_{i}\), where \(k_{i}\ge0\) is the degree of \(f|_{C_{i}}\) and
@@ -158,40 +208,99 @@ the authors name do the work.
   \(H^{0}(C,f^{*}V'(-1))=0\) and
   \(V'(-1)\) is concave along every extremal class, while its dual
   \(W:=(V'(-1))^{\vee}=\pi^{*}(V')^{\vee}\otimes\mathcal O_{\PP(V)}(1)\) is
-  convex there.  Twisting by the inverse \(\C^{\times}\)-equivariant Euler
-  class for the fibrewise action, whose parameter we write \(\lambda\),
-  gives the Gromov--Witten theory of the total space of a concave bundle, and
-  the hypergeometric modification \cite[Theorem~2]{CoatesGivental} of the
-  \(J\)-function has a Serre-dual partner obtained by replacing the Euler
-  class of \(W\) with the inverse equivariant Euler class of \(W^{\vee}\);
-  that partner is stated in the discussion ``On Serre duality'' of
-  \cite{CoatesGivental}.
+  convex there.  The twisted theory is the theory of \(\PP(V)\) twisted by the
+  invertible multiplicative class \(c=e_{\lambda}^{-1}\) and the split bundle
+  \(F=V'(-1)=\bigoplus_{j}\pi^{*}M_{j}\otimes\mathcal O_{\PP(V)}(-1)\).  For
+  such a pair, \cite[Theorem~4.6]{CCIT} proves that the hypergeometric
+  modification \(I^{\mathrm{tw}}=\sum_{D}Q^{D}M_{D}(z)J^{\PP(V)}_{D}\) of the
+  \(J\)-function of \(\PP(V)\) lies on the twisted cone; it holds for an
+  arbitrary invertible multiplicative class and a direct sum of line bundles,
+  and the inverse equivariant Euler class of a concave bundle is the case
+  \cite[Example~A]{CCIT}.  For the Euler class of a convex bundle it is
+  \cite[Theorem~2]{CoatesGivental}, and the inverse-Euler case is the
+  Serre-dual partner discussed in ``On Serre duality'' of
+  \cite{CoatesGivental}.  The theorem is a statement over the full Novikov
+  ring of \(\PP(V)\), with \(J^{\PP(V)}_{D}\) the degree-\(D\) coefficient of
+  \(J^{\PP(V)}\) for every effective class \(D\).
 
-  The dual modification is termwise, so its degree-\(d\) factor can be read
-  off.  The Chern roots of \(W\) are \(H-\sigma_{j}\), and each pairs to
-  \(d\) on \(d[L]\), so the factor contributed by the \(j\)-th root is
-  \(\prod_{l=-d+1}^{0}\bigl(-\lambda-(H-\sigma_{j})+lz\bigr)\), which is
-  empty for \(d=0\).  In positive degree the concave local theory admits the
-  non-equivariant specialization, and letting \(\lambda\to0\) and writing
-  \(m=-l\) turns this into
-  \(\prod_{m=0}^{d-1}(\sigma_{j}-H-mz)\).
+  The modification factor of a line bundle with first Chern class \(x\) in
+  degree \(D\) is
+  \(M_{D}=\prod_{m\le\langle x,D\rangle}c(x+mz)\big/\prod_{m\le0}c(x+mz)\)
+  \cite[Section~4]{CCIT}.  Here the equivariant roots of \(F\) are
+  \(x_{j}=\sigma_{j}-H-\lambda\), and \(\langle x_{j},d[L]\rangle=-d\), so with
+  \(c(x)=x^{-1}\) the factor contributed by the \(j\)-th root is
+  \(\prod_{l=-d+1}^{0}(-\lambda+\sigma_{j}-H+lz)\), which is empty for
+  \(d=0\).  Writing \(m=-l\) turns this into
+  \(\prod_{m=0}^{d-1}(-\lambda+\sigma_{j}-H-mz)\), the numerator of
+  \eqref{eq:Ilambda}.
 
-  The modification applies to a \(J\)-function, so we record that
-  \cite[(34)]{SS} is one.  For \(r\ge2\) the count of Lemma~\ref{lem:order},
-  applied with \(s=0\), gives its degree-\(d\) summand \(z\)-order at most
-  \(1-rd\le-1\) for every \(d\ge1\); so \cite[(34)]{SS} is \(J\)-normalized
-  and, lying on \(\mathcal L_{\PP(V)}\), equals \(J^{\PP(V)}\) by
-  Lemma~\ref{lem:jslice}.  Applying the modification to it, and reparametrizing
-  the extremal variable as in \cite[(33)]{SS}, so that the class \(d[L]\)
-  carries the weight
-  \(q^{\langle c_{1}(T),\,d[L]\rangle}=q^{(r-s)d}\) and the prefactor becomes
-  \(q^{c_{1}(T)/z}\), gives \eqref{eq:ss35}.  The modification factor carries
-  no \(q\); the exponent changes only because the reparametrization is by
+  We now pass to the extremal specialization.  Setting the Novikov variables
+  of classes outside \(\mathbb N[L]\) to zero is a ring homomorphism by
+  \cite[Proposition~4.1]{SS}, since those classes form a monoid ideal of the
+  effective cone.  The twisted cone is defined by generating functions taken
+  coefficientwise in the Novikov degree, so the homomorphism carries
+  \(I^{\mathrm{tw}}\) to a point of the extremal twisted cone
+  \(\mathcal L^{\lambda}_{T}\), and only the terms \(D=d[L]\) survive.  It
+  remains to identify the coefficients \(J^{\PP(V)}_{d[L]}\) with those of
+  \cite[(34)]{SS}.  For \(r\ge2\) the count of Lemma~\ref{lem:order},
+  applied with \(s=0\), gives the degree-\(d\) summand of \cite[(34)]{SS}
+  \(z\)-order at most \(1-rd\le-1\) for every \(d\ge1\); so
+  \cite[(34)]{SS} is \(J\)-normalized and, lying on \(\mathcal L_{\PP(V)}\),
+  equals the extremal specialization of \(J^{\PP(V)}\) by
+  Lemma~\ref{lem:jslice}.  Reparametrizing by \eqref{eq:lnq} with
+  \(D=c_{1}(T)\), as in \cite[(33)]{SS}, the class \(d[L]\) carries the
+  weight \(q^{\langle c_{1}(T),\,d[L]\rangle}=q^{(r-s)d}\) and the prefactor
+  becomes \(q^{c_{1}(T)/z}\); this gives \eqref{eq:Ilambda} as a point of
+  \(\mathcal L_{T}^{\lambda}\).  The modification factor carries no \(q\);
+  the exponent changes only because the reparametrization is by
   \(c_{1}(T)=c_{1}(\PP(V))+c_{1}(V'(-1))\).  The \(d=0\) summand is untouched
-  by the modification and
-  remains the classical term \(z\,e^{\bar{\mathbf t}/z}\).  The modification
-  involves the Chern roots of \(V'(-1)\) and nothing else; here too \(r\) and
-  \(s\) enter only as numbers of factors.
+  by the modification and remains the classical term
+  \(z\,e^{\bar{\mathbf t}/z}\).  The modification involves the Chern roots of
+  \(V'(-1)\) and nothing else; here too \(r\) and \(s\) enter only as numbers
+  of factors.
+\end{proof}
+
+The cone \(\mathcal L_{T}^{\lambda}\) is defined over \(\C(\lambda)\), and its
+pairing degenerates at \(\lambda=0\), so the comparison with \(J^{T}\) must be
+made after \(J\)-slice uniqueness has been applied, not before.  The next
+lemma makes that comparison.
+
+\begin{lemma}
+  \label{lem:limit}
+  Let \(r\ge2\).  In every degree \(d=k[L]\) with \(k\ge1\), the
+  coefficients of \(J^{T}_{\lambda}\) are polynomial in \(\lambda\), and
+  their values at \(\lambda=0\) are the coefficients of the extremal
+  \(J\)-function \(J^{T}\) of \cite{SS}.  In degree zero both are
+  \(z\,e^{\bar{\mathbf t}/z}\).
+\end{lemma}
+
+\begin{proof}
+  Write \(E=V'(-1)\) and \(E_{0,n+1,d}=R^{0}\pi_{\mathcal C*}f^{*}E
+  -R^{1}\pi_{\mathcal C*}f^{*}E\).  For \(k\ge1\) the vanishing
+  \(H^{0}(C,f^{*}E)=0\) shown in the proof of Lemma~\ref{lem:cone} holds for
+  every stable map of class \(k[L]\) with any number of marked points, so the
+  twisting class is
+  \(e_{\lambda}^{-1}(E_{0,n+1,d})=e_{\lambda}(R^{1}\pi_{\mathcal C*}f^{*}E)\),
+  a polynomial in \(\lambda\).  The basis dual to \(\{\phi_{a}\}\) for
+  \((\ ,\ )_{\lambda}\) is \(\{e_{\lambda}(E)\phi^{a}\}\), with
+  \(\{\phi^{a}\}\) dual for the pairing of \(\PP(V)\).  So the
+  degree-\(d\) part of \(J^{T}_{\lambda}\) is
+  \(e_{\lambda}(E)\cup\mathrm{ev}_{n+1,*}\bigl(e_{\lambda}(R^{1}\pi_{\mathcal
+  C*}f^{*}E)\cap\cdots\bigr)\), summed over \(n\), with the descendant
+  insertions of \(J\) in place of the dots; this is polynomial in \(\lambda\).
+  At \(\lambda=0\) it becomes \(e(E)\cup\mathrm{ev}_{n+1,*}\bigl(e(R^{1}\pi_{\mathcal
+  C*}f^{*}E)\cap\cdots\bigr)\).  The Euler class of the obstruction bundle is
+  the virtual class of
+  \(\overline M_{0,n+1}(T,d)=\overline M_{0,n+1}(\PP(V),d)\): this is
+  \cite[Corollary~3.2]{SS}, stated there for \(X\), with \(X\) replaced by
+  \(T\) as in the proof of \cite[Theorem~3.3]{SS}.  Moreover
+  \(e(E)\cup-\) is \(j_{T}^{*}j_{T*}\), which identifies a pushforward to
+  \(\PP(V)\) with the pushforward to \(T\) along the proper evaluation map,
+  again as in that proof.  The result is the degree-\(d\) part
+  of \(J^{T}\).  This is the non-equivariant specialization in positive degree
+  recorded in the discussion ``On Serre duality'' of \cite{CoatesGivental}.  In
+  degree zero the twist \(e_{\lambda}(E)^{-1}\) and the factor
+  \(e_{\lambda}(E)\) of the dual basis cancel, leaving the classical term.
 \end{proof}
 
 The passage from split bundles to general ones is where the printed
@@ -202,10 +311,14 @@ cone.
 
 \begin{lemma}
   \label{lem:split-reduction}
-  Let \(r>s\ge0\).  If the right-hand side of \eqref{eq:ss35} equals the
-  extremal \(J\)-function for every local model whose bundles split, then it
-  does so for every local model.
+  Let \(r>s\ge0\) with \(r\ge2\).  Suppose the right-hand side of
+  \eqref{eq:ss35} equals the extremal \(J\)-function for every split local
+  model with the same \((r,s)\) over every smooth projective base.  Then it
+  does so for every local model with that \((r,s)\).
 \end{lemma}
+
+The hypothesis \(r\ge2\) only guarantees that the line class \([L]\) exists;
+it is not used otherwise in the proof.
 
 \begin{proof}
   Let \(\phi\colon Y\to Z\) be the flag bundle of \(V\oplus V'\) and
@@ -214,26 +327,61 @@ cone.
   the virtual classes of \(\overline M_{0,n}(T_{Y},d)\) and
   \(\overline M_{0,n}(T,d)\) for \(d\) in the span of \([L]\); this is the
   content of \cite[Theorem~4.2]{SS} and, for the fundamental solution, of
-  \cite[Lemma~9.5]{SS}.  Applied to the two-point descendant invariants of
-  \cite[(18)]{SS} it gives \(\tilde\phi^{*}S^{T}=S^{T_{Y}}\tilde\phi^{*}\)
-  and therefore \(\tilde\phi^{*}J^{T}=J^{T_{Y}}\).  Both sides of
-  \eqref{eq:ss35} are symmetric in the Chern roots
-  \cite[Remark~4.5(2)]{SS}, and the expression for \(T_{Y}\) is the pullback
-  of the expression for \(T\).  Since \(\tilde\phi^{*}\) is injective by
-  Leray--Hirsch \cite[Corollary~4.3]{SS}, it suffices to prove the identity
-  on \(T_{Y}\), where \(V\) and \(V'\) are filtered with line-bundle
-  quotients.
+  \cite[Lemma~9.5]{SS}.  In positive degree \(J^{T}\) is the pushforward
+  along the proper evaluation map of descendant classes on these moduli
+  spaces, so base change in the Cartesian square gives, at every formal
+  parameter \(\tau\) of \(T\),
+  \(\tilde\phi^{*}J^{T}(\tau)=J^{T_{Y}}(\tilde\phi^{*}\tau)\).
+
+  The parameters do not match exactly.  Write \(\Theta\) for tangent bundles
+  and \(\varpi\colon T_{Y}\to Y\) for the projection.  The relative tangent
+  bundle of \(\tilde\phi\) is the base change \(\varpi^{*}\Theta_{Y/Z}\), so
+  \(0\to\varpi^{*}\Theta_{Y/Z}\to\Theta_{T_{Y}}\to\tilde\phi^{*}\Theta_{T}\to0\)
+  is exact and
+  \[
+    c_{1}(T_{Y})=\tilde\phi^{*}c_{1}(T)+D_{Y},\qquad
+    D_{Y}:=\varpi^{*}c_{1}(\Theta_{Y/Z}),
+  \]
+  so the parameter \(\bar{\mathbf t}_{Y}=\tilde\phi^{*}t+\ln(q)c_{1}(T_{Y})\)
+  of \(T_{Y}\) is \(\tilde\phi^{*}\bar{\mathbf t}+\ln(q)D_{Y}\).  The class
+  \(D_{Y}\) is pulled back from \(Y\), and a line in a fibre of
+  \(\PP(V_{Y})\to Y\) maps to a point of \(Y\), so
+  \(\langle D_{Y},[L]\rangle=0\).  By the divisor equation \eqref{eq:lnq},
+  \[
+    J^{T_{Y}}(\bar{\mathbf t}_{Y})
+    =e^{\ln(q)D_{Y}/z}\,J^{T_{Y}}(\tilde\phi^{*}\bar{\mathbf t})
+    =e^{\ln(q)D_{Y}/z}\,\tilde\phi^{*}J^{T}(\bar{\mathbf t}).
+  \]
+  On the other side, both numerator and denominator of \eqref{eq:ss35} are
+  symmetric in the respective Chern roots; \cite[Remark~4.5(2)]{SS} says this
+  for \cite[(34)]{SS}, and the same holds for \eqref{eq:ss35}.  The
+  summands for \(T_{Y}\) are therefore the pullbacks of those for \(T\), while
+  the prefactor is
+  \(q^{c_{1}(T_{Y})/z}=e^{\ln(q)D_{Y}/z}\,\tilde\phi^{*}q^{c_{1}(T)/z}\).
+  So the expression \eqref{eq:ss35} for \(T_{Y}\) is
+  \(e^{\ln(q)D_{Y}/z}\) times the pullback of the expression for \(T\).  The
+  same invertible factor multiplies both sides, and \(\tilde\phi^{*}\) is
+  injective by Leray--Hirsch \cite[Corollary~4.3]{SS}; so it suffices to prove
+  the identity on \(T_{Y}\), where \(V\) and \(V'\) are filtered with
+  line-bundle quotients.  The base \(Y\) is again smooth projective.
 
   It remains to replace a filtered bundle by its associated graded.  Take one
   step \(0\to A\to V\to Q\to0\) of the filtration; in this paragraph \(A\),
   \(Q\) and \(t\) are the sub- and quotient bundles and the coordinate on
   \(\mathbf A^{1}\), not the coefficient ring above, the Novikov variable of
-  \eqref{eq:jnorm} or the parameter of \eqref{eq:barparam}.  The construction of
-  \cite[Lemma~9.4]{SS} produces a bundle \(\ker(g)\) on \(Z\times\mathbf
-  A^{1}\) with \(\ker(g)_{1}=V\) and \(\ker(g)_{0}=A\oplus Q\), hence a
-  smooth projective family \(\PP(\ker g)\to Z\times\mathbf A^{1}\) carrying
-  the bundle \(V'(-1)\).  For \(k\ge1\), the argument of
-  \cite[Proposition~3.1]{SS}, applied to the projective bundle
+  \eqref{eq:jnorm} or the parameter of \eqref{eq:barparam}.  Let
+  \(d\colon V\to Q\) be the quotient map and, on \(Z\times\mathbf A^{1}\),
+  \[
+    g\colon V\oplus Q\to Q,\qquad (v,w)\mapsto d(v)-t\,w .
+  \]
+  It is surjective, so \(\ker(g)\) is a bundle of rank \(r\), with
+  \(\ker(g)_{1}=\{(v,d(v))\}\cong V\) and \(\ker(g)_{0}=A\oplus Q\).  This
+  is the construction of \cite[Lemma~9.4]{SS}, where the domain is printed as
+  \(A\oplus Q\); with that domain \(d\) vanishes and \(\ker(g)_{1}\) would be
+  \(A\).  We obtain a smooth projective family
+  \(\PP(\ker g)\to Z\times\mathbf A^{1}\) carrying the bundle \(V'(-1)\).
+  For \(k\ge1\), the argument of
+  \cite[Proposition~3.1]{SS}, stated there for \(X\), applied to the projective bundle
   \(\PP(\ker g)\to Z\times\mathbf A^{1}\), makes the moduli spaces
   \(\overline M_{0,n}(\PP(\ker g)_{t},k[L])\) a smooth proper family
   over \(\mathbf A^{1}\), and concavity makes
@@ -241,13 +389,22 @@ cone.
   the universal curve and universal map, a relative locally free obstruction
   bundle of rank \(s(k-1)\).  Its Euler class, capped with the relative
   fundamental class, gives a relative cycle whose fibrewise restrictions
-  are the extremal virtual classes of \cite[Corollary~3.2]{SS}.  The relative
+  are the extremal virtual classes, by the argument of
+  \cite[Corollary~3.2]{SS} on each fibre.  The relative
   evaluation maps and \(\psi\)-classes define relative descendant cycles, and
   pushing these to \(\mathbf A^{1}\) gives classes in
   \(H^{0}(\mathbf A^{1})\), hence constants.  So the extremal genus-zero
-  descendant invariants, and with them the extremal
-  \(J\)-functions, agree under the isomorphism of cohomology rings of
-  \cite[Lemma~9.4]{SS}.  The right-hand side of \eqref{eq:ss35} is likewise
+  descendant invariants with insertions restricted from
+  \(H^{*}(\PP(\ker g))\) agree at \(t=0\) and \(t=1\).  These determine the
+  extremal \(J\)-functions.  By Leray--Hirsch, \(H^{*}(\PP(\ker g)_{t})\) is
+  spanned by restrictions of classes on \(\PP(\ker g)\), namely powers of
+  \(H\) times classes from \(Z\), and the factor \(e(V'(-1))\) of the
+  pushforward form of \(J^{T}\) in Lemma~\ref{lem:limit} is the restriction
+  of a family class as well.  The degree-\(k[L]\) coefficient of \(J^{T}\) is
+  therefore fixed by its Poincar\'e pairings on the compact space
+  \(\PP(\ker g)_{t}\) with a basis of family classes, and those pairings are
+  the constant invariants just obtained.  So the extremal \(J\)-functions
+  agree under the isomorphism of cohomology rings of \cite[Lemma~9.4]{SS}.  The right-hand side of \eqref{eq:ss35} is likewise
   unchanged, because \(V\) and \(A\oplus Q\) have the same Chern roots.
   Repeating the construction for the filtration of \(V'\), and iterating both
   filtrations as in \cite[Lemma~9.6]{SS}, reaches the split
@@ -263,14 +420,97 @@ cone.
 
 \begin{proof}
   Assume first that \(V\) and \(V'\) split.  By Lemma~\ref{lem:cone} the
-  right-hand side of \eqref{eq:ss35} is a point of \(\mathcal L_{T}\), and by
-  Corollary~\ref{cor:normalized} its expansion is
-  \(z\one+\bar{\mathbf t}+O(z^{-1})\).  So it is a point of \(\mathcal
-  L_{T}\) with prescribed \(z^{0}\) coefficient \(\bar{\mathbf t}\), and by
-  uniqueness of the \(J\)-slice, Lemma~\ref{lem:jslice} with
-  \(\tau=\bar{\mathbf t}\), it is \(J^{T}(q,t,z)\).  The general case follows
-  from Lemma~\ref{lem:split-reduction}.
+  series \eqref{eq:Ilambda} is a point of \(\mathcal L_{T}^{\lambda}\).  The
+  count of Lemma~\ref{lem:order} applies to it unchanged: \(\lambda\) enters
+  only the numerator factors, which keep their degree in \(z\), and the
+  \(s\) factors with \(m=0\), now \(-\lambda+\sigma_{j}-H\), are still free
+  of \(z\).  So, as in Corollary~\ref{cor:normalized},
+  \(I_{\lambda}=z\one+\bar{\mathbf t}+O(z^{-1})\), and by uniqueness of the
+  \(J\)-slice, Lemma~\ref{lem:jslice} with \(\tau=\bar{\mathbf t}\),
+  \(I_{\lambda}=J^{T}_{\lambda}(q,t,z)\).  Both sides are polynomial in
+  \(\lambda\) in each degree, \(I_{\lambda}\) visibly and \(J^{T}_{\lambda}\)
+  by Lemma~\ref{lem:limit}.  Setting \(\lambda=0\) gives \eqref{eq:ss35} on
+  the left and \(J^{T}(q,t,z)\) on the right, by Lemmas~\ref{lem:cone}
+  and~\ref{lem:limit}.  The general case follows from
+  Lemma~\ref{lem:split-reduction}.
 \end{proof}
+
+The Shen--Shoemaker argument after their Section~4 uses \eqref{eq:ss35} also in
+equivariant cohomology.  Their Lemma~7.4 and Proposition~9.1 use it for the
+torus \(\mathbb T=(\C^{\times})^{r+s}\) scaling the summands of split bundles
+\cite[Sections~7.2 and~9.1]{SS}.  The proof of their Lemma~9.4 uses it for the
+torus \(S=(\C^{\times})^{2}\) scaling \(V\) and \(V'\).  The equivariant form
+follows from Proposition~\ref{prop:IJ} by approximation, because extremal
+curves never leave the fibres over \(Z\).
+
+\begin{corollary}
+  \label{cor:equivariant}
+  Let \(r=s+1\) with \(s\ge1\), and let \(G\) be a torus acting trivially on
+  \(Z\) and by vector-bundle automorphisms on \(V\) and \(V'\).  Then
+  \eqref{eq:ss35}, with \(\rho_{i}\), \(\sigma_{j}\), \(H\) and \(c_{1}(T)\)
+  read as \(G\)-equivariant classes and \(t\in H^{*}_{G}(Z)\), equals the
+  \(G\)-equivariant extremal \(J\)-function of \(T\).  Here the latter is
+  defined in degree \(k[L]\), \(k\ge1\), by the proper-pushforward formula
+  \(\mathrm{ev}_{*}\bigl(e_{G}(R^{1}\pi_{\mathcal C*}f^{*}V'(-1))\cap\cdots\bigr)\)
+  along \(\mathrm{ev}\colon\overline M_{0,n+1}(T,k[L])\to T\), and in degree
+  zero by \(z\,e^{\bar{\mathbf t}/z}\).  When the \(G\)-fixed locus of \(T\)
+  is compact, this agrees with the definition through the localized
+  equivariant pairing.  This applies to \(G=S\), and to \(G=\mathbb T\) when
+  \(V\) and \(V'\) split.
+\end{corollary}
+
+The pushforward definition is needed in general: if \(G\) acts on \(V\) and
+\(V'\) with weights that make the weight of \(V'(-1)\) trivial, the fixed
+locus is all of \(T\) and the localized pairing is undefined.  For \(S\) and
+\(\mathbb T\) the fixed locus lies in the zero section \(\PP(V)\), which is
+compact.
+
+\begin{proof}
+  Write \(G\cong(\C^{\times})^{g}\), \(E_{N}=(\C^{N}\setminus0)^{g}\) and
+  \(B_{N}=E_{N}/G=(\PP^{N-1})^{g}\).  Then \(V_{N}=V\times_{G}E_{N}\) and
+  \(V'_{N}=V'\times_{G}E_{N}\) are vector bundles of ranks \(r\) and \(s\) on
+  the smooth projective variety \(Z\times B_{N}\), and
+  \(T_{N}=T\times_{G}E_{N}\) is their local model.  Restriction
+  \(H^{k}_{G}(T)\to H^{k}(T_{N})\) is an isomorphism for \(k<2N-1\).  It sends
+  the equivariant classes \(\rho_{i}\), \(\sigma_{j}\), \(H\) to the
+  corresponding classes of \(V_{N}\), \(V'_{N}\) and \(\mathcal
+  O_{\PP(V_{N})}(1)\), and \(c^{G}_{1}(T)\) to
+  \(c_{1}(T_{N})-c_{1}(B_{N})\).
+
+  By the argument of \cite[Lemma~2.6]{SS} in the fibre-bundle form of the
+  proof of \cite[Theorem~4.2]{SS}, applied over the projective base
+  \(Z\times B_{N}\), stable maps of class \(k[L]\) to \(\PP(V_{N})\) lie in
+  fibres over \(Z\times B_{N}\); by the vanishing of sections in the proof of
+  Lemma~\ref{lem:cone}, stable maps of that class to \(T_{N}\) lie on the
+  zero section.  So
+  \(\overline M_{0,n}(T_{N},k[L])=\overline M_{0,n}(T,k[L])\times_{G}E_{N}\),
+  and the obstruction bundle (that of \cite[Corollary~3.2]{SS}, with \(X\)
+  replaced by \(T\)) descends.  These
+  moduli spaces are smooth and their virtual classes are Euler classes.  The
+  equivariant extremal descendant classes of \(T\) are therefore built from
+  \(\psi\)-classes, evaluation pullbacks, an equivariant Euler class and
+  proper pushforward on smooth spaces, and they restrict to the corresponding
+  classes of \(T_{N}\).  When the fixed locus is compact, the equivariant
+  \(J\)-function defined through the localized pairing, which is the
+  definition used in \cite{SS}, has this pushforward form in degree
+  \(d\ge1\), because \(\mathrm{ev}\) factors through the zero section and
+  \(j_{T}^{*}j_{T*}=e_{G}(V'(-1))\cup-\).  The extremal specialization of
+  \(T_{N}\) kills the curve classes of \(B_{N}\).  The class \(c_{1}(B_{N})\)
+  pairs to zero with \([L]\), so by the divisor equation the shift by
+  \(-\ln(q)c_{1}(B_{N})\) multiplies both sides of \eqref{eq:ss35} by the same
+  factor \(e^{-\ln(q)c_{1}(B_{N})/z}\).
+
+  Proposition~\ref{prop:IJ}, which allows non-split bundles, now gives the
+  identity in \(H^{*}(T_{N})\).  For fixed powers of \(q\), \(z\) and
+  \(\ln q\) and a fixed monomial in the coordinates of \(t\), each side's
+  coefficient is a finite sum of homogeneous components in
+  \(H^{*}_{G}(T)\), and each component is detected in \(H^{*}(T_{N})\) once
+  \(2N-1\) exceeds its degree.  Taking \(N\) large proves the identity there.
+\end{proof}
+
+The proof uses only the non-equivariant identity over arbitrary smooth
+projective bases, so the same approximation gives the equivariant form of
+\cite[Theorem~4.4]{SS} for \(r-s>1\) from its printed non-equivariant form.
 
 \begin{remark}
   \label{rem:circularity}
@@ -285,9 +525,10 @@ cone.
   its hypothesis \(r-s>1\).  At \(\nu=1\) that formula is what is being
   established, so Lemma~\ref{lem:split-reduction} appeals to the underlying
   deformation instead of to the conclusion drawn from it.  Once
-  Proposition~\ref{prop:IJ} is available, \cite[Lemmas~9.4--9.6]{SS} hold at
-  \(\nu=1\) as printed, their input having been supplied; this is what
-  Section~\ref{sec:scope} uses.
+  Proposition~\ref{prop:IJ} and its \(S\)-equivariant form,
+  Corollary~\ref{cor:equivariant}, are available, \cite[Lemmas~9.4--9.6]{SS}
+  hold at \(\nu=1\) as printed, their input having been supplied; this is
+  what Section~\ref{sec:scope} uses.
 \end{remark}
 
 \begin{corollary}
@@ -312,7 +553,11 @@ cone.
   \cite[Lemma~2]{Pandharipande}; it uses \(r-s>1\) only to know that
   \eqref{eq:ss35} is \(J^{T}\).  Proposition~\ref{prop:IJ} supplies that,
   so the proof applies verbatim, and \cite[(39)--(40)]{SS} follow by the
-  same substitution as in \cite[Section~4.3]{SS}.
+  same substitution as in \cite[Section~4.3]{SS}.  The same derivation,
+  applied to Corollary~\ref{cor:equivariant}, gives the equivariant
+  presentation of \(QH^{*}_{\mathrm{ext},\mathbb T}(T)\) stated after
+  \cite[(81)]{SS}; that step is the authors' own, and only its input is
+  supplied here.
 
   For the spectrum, \cite[Propositions~5.1 and~5.2]{SS} concern the abstract
   ring \eqref{eq:ss37} and its subspaces and assume only \(r>s\), and
@@ -335,8 +580,8 @@ cone.
   count.
 \end{remark}
 
-Proposition~\ref{prop:IJ} and Corollary~\ref{cor:presentation} prove
-Theorem~\ref{thm:normalization}.  They also settle the status of
+Proposition~\ref{prop:IJ} and Corollaries~\ref{cor:equivariant}
+and~\ref{cor:presentation} prove Theorem~\ref{thm:normalization}.  They also settle the status of
 \cite[Remark~4.5(3)]{SS}: under the standing assumption \(r>s\) its range
 \(r-s\le1\) is exactly \(\nu=1\), and by
 Corollary~\ref{cor:normalized} and Remark~\ref{rem:boundary} its negative
